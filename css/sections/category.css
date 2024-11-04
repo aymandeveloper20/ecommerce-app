@@ -58,7 +58,7 @@
     padding: 24px 52px;
     border-radius: 15px;
     text-align: center;
-    min-width:140px;
+    min-width:130px;
 }
 .category__item h3{
     font-family: var(--inter-font), sans-serif;
