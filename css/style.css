@@ -2,6 +2,7 @@
 @import url("./sections/main.css");
 @import url("./sections/gridItems.css");
 @import url("./sections/category.css");
+@import url("./sections/products.css");
 * {
   padding: 0;
   margin: 0;
