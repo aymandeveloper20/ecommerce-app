@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topoco</title>
+    <link rel="stylesheet" href="./img/logo-black.svg" type="favicon/ico" sizes="32x32" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo"><img src="img/logo-black.svg" alt="logo black"> </div>
+      <div class="header_search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" name="search" id="searchbar" placeholder="Search">
+      </div>
+      <ul class="header_menu">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <ul class="header__iconbuttons">
+        <li><img src="./img/Favorites.svg" alt="Favourites"></li>
+        <li><a href="./pages/cart.html"><img src="./img/Cart.svg" alt="Cart"></a></li>
+        <li><img src="./img/User.svg" alt="User"></li>
+      </ul>
+      <i class="fa-solid fa-bars burger-menu"></i>
+    </div>
+      <ul class="mobile-menu fulled" id="mobile-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <hr/>
+        <li class="icon"><a href=""><img src="img/Favorites-white.svg" alt="Favorites"><span>Favourites</span></a></li>
+        <li class="icon"><a href="/pages/cart.html"><img src="img/Cart-white.svg" alt="Cart"><span>Cart</span></a></li>
+        <li class="icon"><a href=""><img src="img/User-white.svg" alt="User"><span>User</span></a></li>
+      </ul>
+  </header>
+  <div class="subnav">
+    <ul class="container">
+
+        <li><a href="#"><img src="img/Phones.svg" alt="Phones"> <span>Phones</span> </a></li>
+        <li><a href="#"><img src="img/Computers.svg" alt="Computers"> <span>Computers</span> </a></li>
+        <li><a href="#"><img src="img/Gaming.svg" alt="Gaming"> <span>Smart Watches</span> </a></li>
+        <li><a href="#"><img src="img/Cameras.svg" alt="Cameras"> <span>Cameras</span> </a></li>
+        <li><a href="#"><img src="img/Headphones.svg" alt="HeadPhones"> <span>Headphones</span> </a></li>
+        <li><a href="#"><img src="img/Gaming.svg" alt="Gaming"> <span>Gaming</span> </a></li>
+    </ul>
+  </div>
+  <main>
+    <div class="container">
+      <div class="main_content">
+        <p class="main_content_title">Pro.Beyond.</p>
+        <h1 class="main_content_heading">Iphone 14 <strong>Pro</strong></h1>
+        <p class="main_content_text">Created to change everything fo the better.For everyone</p>
+        <button class="main_content_button">Shop Now </button>
+      </div>
+      <div class="main_image">
+        <img src="./img/IphoneImage.png" alt="iphone"></img>
+      </div>
+    </div>
+  </main>
+  <section id="grid-items" class="grid-items">
+    <div class="row">
+    <div class="col-1">
+        <div class="playstation grid-item">
+          <picture>
+            <img src="img/PlayStation.png" alt="PlayStation">
+          </picture>
+
+        <div class="grid-item__content">
+          <h3>Playstation <strong>5</strong></h3>
+          <p>Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</p>
+        </div>
+    </div>
+        <div class="row row-1">
+          <div class="airpods grid-item">
+            <picture>
+              <img src="img/Airpods.png" alt="Airpods">
+            </picture>
+        <div class="grid-item__content">
+          <h3>Apple AirPods <strong>Max</strong></h3>
+          <p>Computational audio. Listen, it's powerful</p>
+        </div>
+      </div>
+          <div class="applevision grid-item">
+            <picture>
+              <img src="img/Applevision.png" alt="Applevision">
+            </picture>
+      <div class="grid-item__content">
+        <h3>Apple vision <strong>Pro</strong></h3>
+        <p>An immersive way to experience entertainment</p>
+      </div>
+    </div>
+
+        </div>
+      </div>
+      <div class="col-1">
+      <div class="macbook grid-item">
+      <div class="grid-item__content">
+        <h3>Macbook <strong>Air</strong></h3>
+        <p>The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
+        <button>Shop Now</button>
+      </div>
+        <picture>
+          <img src="img/MacBookPro.svg" alt="Macbook">
+        </picture>
+    </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section id="category" class="category">
+    <div class="category__container">
+        <div class="category__head">
+          <h2>Browse By Category</h2>
+          <div class="category__buttons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      <div class="category__content">
+        <div class="category__item">
+          <img src="img/category__icons/Phones.svg" alt="Phones">
+          <h3>Phones</h3>
+        </div>
+        <div class="category__item">
+          <img src="img/category__icons/Smart%20Watches.svg" alt="Smart Watches">
+          <h3>Smart Watches</h3>
+        </div>
+        <div class="category__item">
+          <img src="img/category__icons/Cameras.svg" alt="Cameras">
+          <h3>Cameras</h3>
+        </div>
+        <div class="category__item">
+          <img src="img/category__icons/Headphones.svg" alt="Headphones">
+          <h3>Headphones</h3>
+        </div>
+        <div class="category__item">
+          <img src="img/category__icons/Computers.svg" alt="Computers">
+          <h3>Computers</h3>
+        </div>
+        <div class="category__item">
+          <img src="img/category__icons/Gaming.svg" alt="Gaming">
+          <h3>Gaming</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="./js/headerNav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.grid-item{
+    overflow: hidden;
+    min-height: 272px;
+}
+.playstation {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    position: relative;
+    justify-content: flex-start; /* Align items to the start to reduce space */
+    width: 100% !important;
+    /*min-width:375px !important;*/
+    flex: 2;
+}
+.playstation picture{
+    max-width: 300px;
+}
+.playstation img {
+    height: 343px;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    left: -148px;
+    position: relative;
+}
+
+.playstation .grid-item__content {
+    flex: 2;
+    max-width: 75%; /* Keep this to ensure content takes up space */
+    padding: 48px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.playstation .grid-item__content h3{
+    font-family: var(--inter-font) ,sans-serif;
+    font-size: 49px !important;
+    line-height: 40px;
+    font-weight: 200;
+    color: black;
+}
+.playstation .grid-item__content p{
+    font-family: var(--inter-font),sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #909090;
+}
+.playstation strong{
+    font-weight: 500;
+}
+.airpods{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    background-color: #ededed;
+}
+.airpods picture{
+    width: 150px;
+}
+.airpods img{
+    height: 272px;
+    position: relative;
+    left: -95%;
+
+}
+.airpods .grid-item__content{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.airpods .grid-item__content h3{
+    font-family: var(--inter-font) , sans-serif;
+    font-size: 40px !important;
+    font-weight: 200;
+
+}
+.airpods .grid-item__content p{
+    font-family: var(--inter-font),sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #909090;
+}
+.applevision{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #353535 !important;
+    width: 50%;
+}
+.applevision picture{
+    width: 190px;
+}
+.applevision img{
+    position: relative;
+    left: -95%;
+    width: 360px;
+}
+.applevision .grid-item__content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.applevision .grid-item__content h3{
+    font-family: var(--inter-font),sans-serif;
+    font-weight: 200;
+    font-size: 29px;
+    line-height: 40px;
+    color: #fff;
+}
+.applevision .grid-item__content p{
+
+    font-family: var(--inter-font),sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #909090;
+}
+.macbook{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ededed;
+    padding-left: 56px !important;
+    height: 100%;
+    width: 100%;
+}
+.macbook .grid-item__content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+.macbook picture{
+    width: 300px;
+}
+.macbook img{
+    width: 829px;
+    position: relative;
+    right: 10px;
+}
+.macbook .grid-item__content h3{
+    font-family: var(--inter-font),sans-serif;
+    font-size: 64px;
+    line-height: 56px;
+    font-weight: 200;
+}
+.macbook .grid-item__content p{
+font-family: var(--inter-font),sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #909090;
+}
+.macbook .grid-item__content button{
+    font-family: var(--inter-font),sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 16px 56px;
+    cursor: pointer;
+}
+.macbook .grid-item__content button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 1400px) {
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+    .col-1{
+        width: 100%;
+    }
+    .col-1:first-child{
+        flex-direction: column-reverse;
+    }
+    .row-1 div{
+        width: 100%;
+    }
+    .grid-item{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 16px;
+        align-items: center !important;
+        gap: 24px !important;
+        text-align: center;
+    }
+    .grid-item img{
+        position: static;
+        left: 0 !important;
+    }
+    .playstation picture{
+        position: relative;
+    }
+    .playstation img{
+        position: absolute;
+        left: 50%;
+        transform:translateX(-50%);
+
+    }
+    .playstation .grid-item__content{
+        margin-top: 350px;
+        padding: 0 !important;
+    }
+    .grid-item picture{
+        width: fit-content;
+    }
+    .macbook{
+        flex-direction: column-reverse;
+        width: 100% !important;
+        padding: 40px 16px !important;
+
+    }
+    .macbook .grid-item__content{
+        align-items: stretch;
+    }
+    .macbook .grid-item__content{
+        padding: 0 !important;
+    }
+    .macbook picture{
+        width: 100%;
+    }
+    .macbook picture img{
+        width: 100%;
+    }
+    .grid-item__content{
+        width: fit-content !important;
+    }
+}
+@media (max-width:375px){
+    .playstation.playstation h3{
+        font-size: 45px !important;
+    }
+}
