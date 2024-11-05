@@ -15,3 +15,17 @@ let activated = false;
         activated = false;
     }
 });
+
+// JavaScript to manage dot navigation for mobile
+const productSection = document.getElementById('productSection');
+const dots = document.querySelectorAll('.dot');
+
+productSection.addEventListener('scroll', () => {
+    const scrollLeft = productSection.scrollLeft;
+    const cardWidth = productSection.clientWidth;
+
+    const activeIndex = Math.round(scrollLeft / cardWidth);
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === activeIndex);
+    });
+});

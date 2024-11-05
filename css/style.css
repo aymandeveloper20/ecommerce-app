@@ -3,6 +3,8 @@
 @import url("./sections/gridItems.css");
 @import url("./sections/category.css");
 @import url("./sections/products.css");
+@import url("./sections/productSection.css");
+@import url("./sections/bigsale.css");
 * {
   padding: 0;
   margin: 0;

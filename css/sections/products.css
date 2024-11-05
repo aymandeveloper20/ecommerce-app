@@ -8,6 +8,12 @@
     max-width: 1345px !important;
     margin: auto;
 }
+.products__title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+
+}
 .topbar{
     display: flex;
     flex-direction: row;
@@ -28,7 +34,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    width: 0%;
+    width: 0;
     transition: all .3s ease-in-out;
     height: 2px;
     background-color: #000;

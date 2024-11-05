@@ -1,0 +1,65 @@
+.bigsale{
+    position: relative;
+    width: 100%;
+    height: 30dvh;
+    background-image: url('../../img/banner.svg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bigsale .bigsale__container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.bigsale .bigsale__heads{
+    display: flex;
+    flex-direction: column;
+
+}
+.bigsale__heads .bigsale__title{
+    font-size: 72px;
+    font-weight: 200;
+    line-height: 72px;
+    letter-spacing: -1px;
+    color: white;
+}
+.bigsale__subtitle{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #787878;
+}
+.bigsale__button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 56px;
+    border-radius: 6px;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+}
+.bigsale__button:hover{
+    background-color: #fff;
+    color: #211C24;
+}
+@media (max-width: 991px){
+    .bigsale__title{
+        font-size: 50px !important;
+    }
+}
+@media (max-width: 767px) {
+    .bigsale__title{
+        font-size:35px !important;
+        line-height: 50px !important;
+    }
+}
