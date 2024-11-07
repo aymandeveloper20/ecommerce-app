@@ -3,41 +3,47 @@
   <head>
     <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Title and Description -->
     <title>eCommerce App - Ayman's Store</title>
-    <meta name="description" content="Explore a wide range of products with Ayman's eCommerce app. Discover amazing deals and shop online with ease!">
+    <meta name="description" content="Explore a wide range of products at Ayman's eCommerce app. Enjoy amazing deals and a seamless online shopping experience!">
 
     <!-- SEO Meta Tags -->
-    <meta name="keywords" content="ecommerce, online shopping, Ayman's Store, buy products online, best deals">
+    <meta name="keywords" content="ecommerce, online shopping, Ayman's Store, best deals, buy products online, shopping deals, online store, discounts">
     <meta name="author" content="Ayman Developer">
+    <meta name="robots" content="index, follow">
 
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://aymandeveloper20.github.io/ecommerce-app/">
     <meta property="og:title" content="eCommerce App - Ayman's Store">
-    <meta property="og:description" content="Explore a wide range of products with Ayman's eCommerce app. Discover amazing deals and shop online with ease!">
+    <meta property="og:description" content="Explore a wide range of products at Ayman's eCommerce app. Enjoy amazing deals and a seamless online shopping experience!">
     <meta property="og:image" content="https://aymandeveloper20.github.io/ecommerce-app/images/social-share.png">
+    <meta property="og:image:alt" content="Ayman's eCommerce app products">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://aymandeveloper20.github.io/ecommerce-app/">
     <meta name="twitter:title" content="eCommerce App - Ayman's Store">
-    <meta name="twitter:description" content="Explore a wide range of products with Ayman's eCommerce app. Discover amazing deals and shop online with ease!">
+    <meta name="twitter:description" content="Explore a wide range of products at Ayman's eCommerce app. Enjoy amazing deals and a seamless online shopping experience!">
     <meta name="twitter:image" content="https://aymandeveloper20.github.io/ecommerce-app/images/social-share.png">
 
-    <!-- Favicon -->
-    <link rel="stylesheet" href="./img/logo-black.svg" type="favicon/ico" sizes="32x32" />
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="https://aymandeveloper20.github.io/ecommerce-app/img/logo-black.svg" type="image/svg+xml" sizes="32x32">
+    <link rel="icon" href="https://aymandeveloper20.github.io/ecommerce-app/img/logo-black.svg" type="image/svg+xml" sizes="16x16">
+    <link rel="apple-touch-icon" href="https://aymandeveloper20.github.io/ecommerce-app/img/logo-black.svg">
 
     <!-- Additional Meta Tags for Mobile and Web Apps -->
     <meta name="theme-color" content="#317EFB">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CDN with async loading -->
     <noscript>
       <link
               rel="stylesheet"
@@ -47,12 +53,13 @@
               referrerpolicy="no-referrer"
       />
     </noscript>
+
     <!-- Preconnect to Google Fonts with optimized load -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 
     <!-- Preload Google Fonts stylesheet asynchronously -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'" media="print">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" media="print">
 
     <!-- Fallback for browsers with JavaScript disabled -->
     <noscript>
