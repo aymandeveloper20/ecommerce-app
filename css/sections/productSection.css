@@ -29,7 +29,7 @@
 .product-card:last-child img {
     position: relative;
     width: 539px;
-    top: -95px;
+    top: -330px;
 }
 .product-card:last-child button:hover{
     color:#2c2c2c;
