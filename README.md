@@ -5,3 +5,9 @@
 
 ## Website on Desktop
 ![Website on Desktop](docs/screenshot.jpeg)
+
+## Website on Mobile
+![Website on Mobile](docs/screenshot-mobile.jpeg)
+
+##Performance
+![Website on Mobile](docs/sperformance.png)
