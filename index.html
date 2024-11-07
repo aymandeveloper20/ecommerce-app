@@ -45,10 +45,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Fonts -->
+    <!-- Preconnect to Google Fonts with optimized load -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" onload="this.rel='stylesheet'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" rel="stylesheet">
+    </noscript>
+
   </head>
   <body>
   <header class="header">
@@ -102,7 +106,10 @@
         <button class="main_content_button">Shop Now </button>
       </div>
       <div class="main_image">
-        <img src="./img/IphoneImage.png" alt="iphone">
+        <picture>
+          <source srcset="./img-webp/IphoneImage.webp" type="image/webp">
+          <img src="./img/IphoneImage.png" alt="iphone">
+        </picture>
       </div>
     </div>
   </main>
@@ -111,6 +118,7 @@
     <div class="col-1">
         <div class="playstation grid-item">
           <picture>
+            <source srcset="./img-webp/PlayStation.webp" type="image/webp">
             <img src="img/PlayStation.png" alt="PlayStation">
           </picture>
 
@@ -122,6 +130,7 @@
         <div class="row row-1">
           <div class="airpods grid-item">
             <picture>
+              <source srcset="./img-webp/Airpods.webp" type="image/webp">
               <img src="img/Airpods.png" alt="Airpods">
             </picture>
         <div class="grid-item__content">
@@ -131,6 +140,7 @@
       </div>
           <div class="applevision grid-item">
             <picture>
+              <source srcset="./img-webp/Applevision.webp" type="image/webp">
               <img src="img/Applevision.png" alt="Applevision">
             </picture>
       <div class="grid-item__content">
@@ -149,6 +159,7 @@
         <button>Shop Now</button>
       </div>
         <picture>
+          <source srcset="./img-webp/MacBookPro.webp" type="image/webp">
           <img src="img/MacBookPro.svg" alt="Macbook">
         </picture>
     </div>
@@ -204,7 +215,12 @@
       <div class="products__container">
         <div class="product">
           <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-          <div class="product__image"><img src="img/products/Iphone.png" alt="Iphone"></div>
+          <div class="product__image">
+            <picture>
+              <source srcset="./img-webp/products/Iphone.webp" type="image/webp">
+            <img src="img/products/Iphone.png" alt="Iphone">
+          </picture>
+          </div>
           <div class="product__content">
             <h3>Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
             <div class="product__price">$900</div>
@@ -213,7 +229,12 @@
         </div>
         <div class="product">
           <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-          <div class="product__image"><img src="img/products/Blackmagic.png" alt="Blackmagic Camera"></div>
+          <div class="product__image">
+            <picture>
+              <source srcset="./img-webp/products/Blackmagic.webp" type="image/webp">
+              <img src="img/products/Blackmagic.png" alt="Blackmagic">
+            </picture>
+          </div>
           <div class="product__content">
             <h3>Blackmagic Pocket Cinema Camera 6k</h3>
             <div class="product__price">$2535</div>
@@ -222,7 +243,13 @@
         </div>
         <div class="product">
           <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-          <div class="product__image"><img src="img/products/iwatch.png" alt="Apple Iwatch"></div>
+          <div class="product__image">
+            <picture>
+              <source srcset="./img-webp/products/iwatch.webp" type="image/webp">
+              <img src="img/products/iwatch.png" alt="Apple Iwatch">
+            </picture>
+
+          </div>
           <div class="product__content">
             <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</h3>
             <div class="product__price">$399</div>
@@ -232,7 +259,12 @@
         </div>
         <div class="product">
           <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-          <div class="product__image"><img src="img/products/airpod.png" alt="Apple Airpods"></div>
+          <div class="product__image">
+            <picture>
+              <source srcset="./img-webp/products/airpod.webp" type="image/webp">
+              <img src="img/products/airpod.png" alt="Apple Airpods">
+            </picture>
+          </div>
           <div class="product__content">
             <h3>Airpods Max Silver</h3>
             <div class="product__price">$549</div>
@@ -241,7 +273,12 @@
         </div>
         <div class="product">
           <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-          <div class="product__image"><img src="img/products/samsungwatch.png" alt="Samsung Galaxy"></div>
+          <div class="product__image">
+            <picture>
+              <source srcset="./img-webp/products/samsungwatch.webp" type="image/webp">
+              <img src="img/products/samsungwatch.png" alt="Samsung Watch">
+            </picture>
+          </div>
           <div class="product__content">
             <h3>Samsung Galaxy Watch6 Classic 47mm Black</h3>
             <div class="product__price">$369</div>
@@ -250,7 +287,12 @@
         </div>
         <div class="product">
           <div class="like"><img src="./img/products/Like-filled.svg" alt="Like"></div>
-          <div class="product__image"><img src="img/products/galaxyz.png" alt="Glaxy Z"></div>
+          <div class="product__image">
+            <picture>
+              <source srcset="./img-webp/products/galaxyz.webp" type="image/webp">
+              <img src="img/products/galaxyz.png" alt="Galaxy Z">
+            </picture>
+          </div>
           <div class="product__content">
             <h3>Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</h3>
             <div class="product__price">$1799</div>
@@ -259,7 +301,12 @@
         </div>
         <div class="product">
           <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-          <div class="product__image"><img src="./img/products/bude.png" alt="Buds"></div>
+          <div class="product__image">
+            <picture>
+              <source srcset="./img-webp/products/bude.webp" type="image/webp">
+              <img src="img/products/bude.png" alt="Bude">
+            </picture>
+          </div>
           <div class="product__content">
             <h3>Galaxy Buds FE Graphite</h3>
             <div class="product__price">$99.99</div>
@@ -268,7 +315,12 @@
         </div>
         <div class="product">
           <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-          <div class="product__image"><img src="./img/products/ipad.png" alt="Ipad"></div>
+          <div class="product__image">
+            <picture>
+              <source srcset="./img-webp/products/ipad.webp" type="image/webp">
+              <img src="img/products/ipad.png" alt="Apple Ipad">
+            </picture>
+          </div>
           <div class="product__content">
             <h3>Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021</h3>
             <div class="product__price">$398</div>
@@ -281,8 +333,8 @@
   <section class="productSection" id="productSection">
     <div class="product-card">
       <picture>
-      <img src="./img/productSection/watch.png" alt="Watch">
-
+        <source srcset="./img-webp/productSection/watch.webp" type="image/webp">
+        <img src="img/productSection/watch.png" alt="Apple Iwatch">
       </picture>
       <div class="product-card__content">
         <h2>Popular Products</h2>
@@ -292,8 +344,8 @@
     </div>
     <div class="product-card">
       <picture>
-        <img src="./img/productSection/ipad.png" alt="iPad">
-
+        <source srcset="./img-webp/productSection/ipad.webp" type="image/webp">
+        <img src="img/productSection/ipad.png" alt="Apple ipad">
       </picture>
       <div class="product-card__content">
         <h2>IPad Pro</h2>
@@ -304,7 +356,8 @@
     </div>
     <div class="product-card">
       <picture>
-        <img src="./img/productSection/galaxy.png" alt="Galaxy">
+        <source srcset="./img-webp/productSection/galaxy.webp" type="image/webp">
+        <img src="img/productSection/galaxy.png" alt="galaxy">
       </picture>
       <div class="product-card__content">
         <h2>Samsung Galaxy</h2>
@@ -314,8 +367,8 @@
     </div>
     <div class="product-card">
       <picture>
-        <img src="./img/productSection/macbook.svg" alt="Macbook">
-
+        <source srcset="./img-webp/productSection/macbook.webp" type="image/webp">
+        <img src="img/productSection/macbook.png" alt="Apple macbook">
       </picture>
       <div class="product-card__content">
         <h2>Macbook Pro</h2>
@@ -338,7 +391,12 @@
     <div class="products__container">
       <div class="product">
         <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-        <div class="product__image"><img src="img/discounts/iphone-gold.png" alt="Iphone"></div>
+        <div class="product__image">
+          <picture>
+            <source srcset="./img-webp/discounts/iphone-gold.webp" type="image/webp">
+            <img src="img/discounts/iphone-gold.png" alt="Apple Iphone Gold">
+          </picture>
+        </div>
         <div class="product__content">
           <h3>Apple iPhone 14 Pro 512GB Gold (MQ233)</h3>
           <div class="product__price">$1437</div>
@@ -347,7 +405,10 @@
       </div>
       <div class="product">
         <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-        <div class="product__image"><img src="img/discounts/airpods.png" alt="Airpods"></div>
+        <div class="product__image"><picture>
+          <source srcset="./img-webp/discounts/airpods.webp" type="image/webp">
+          <img src="img/discounts/airpods.png" alt="Apple airpods">
+        </picture></div>
         <div class="product__content">
           <h3>Airpods Max Silver</h3>
           <div class="product__price">$549</div>
@@ -356,7 +417,12 @@
       </div>
       <div class="product">
         <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-        <div class="product__image"><img src="img/discounts/iwatch.png" alt="Iwatch"></div>
+        <div class="product__image">
+          <picture>
+            <source srcset="./img-webp/discounts/iwatch.webp" type="image/webp">
+            <img src="img/discounts/iwatch.png" alt="Apple iwatch">
+          </picture>
+        </div>
         <div class="product__content">
           <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</h3>
           <div class="product__price">$399</div>
@@ -365,7 +431,12 @@
       </div>
       <div class="product">
         <div class="like"><img src="./img/products/Like.svg" alt="Like"></div>
-        <div class="product__image"><img src="img/discounts/iphone-white.png" alt="Iphone White"></div>
+        <div class="product__image">
+          <picture>
+            <source srcset="./img-webp/discounts/iphone-white.webp" type="image/webp">
+            <img src="img/discounts/iphone-white.png" alt="Apple Iphone white">
+          </picture>
+        </div>
         <div class="product__content">
           <h3>Apple iPhone 14 Pro 1TB Gold (MQ2V3)</h3>
           <div class="product__price">$1499</div>
