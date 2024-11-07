@@ -48,10 +48,15 @@
     <!-- Preconnect to Google Fonts with optimized load -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" onload="this.rel='stylesheet'">
+
+    <!-- Preload Google Fonts stylesheet asynchronously -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'" media="print">
+
+    <!-- Fallback for browsers with JavaScript disabled -->
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" rel="stylesheet">
     </noscript>
+
 
   </head>
   <body>
