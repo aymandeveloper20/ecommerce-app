@@ -10,4 +10,4 @@
 ![Website on Mobile](docs/screenshot-mobile.jpeg)
 
 ##Performance
-![Website on Mobile](docs/sperformance.png)
+![Website on Mobile](docs/performance.png)
